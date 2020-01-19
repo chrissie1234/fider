@@ -221,9 +221,9 @@ func (r *Renderer) Render(w io.Writer, statusCode int, name string, props Props,
 		"stripePublicKey": env.Config.Stripe.PublicKey,
 		"domain":          r.settings.Domain,
 		"hasLegal":        r.settings.HasLegal,
-		"baseURL":         ctx.BaseURL(),
-		"tenantAssetsURL": TenantAssetsURL(ctx, ""),
-		"globalAssetsURL": GlobalAssetsURL(ctx, ""),
+		"baseURL":         "https://suggestions.bloxtech.tech",
+		"tenantAssetsURL": "https://suggestions.bloxtech.tech",
+		"globalAssetsURL": "https://suggestions.bloxtech.tech",
 		"oauth":           oauthProviders.Result,
 	}
 
