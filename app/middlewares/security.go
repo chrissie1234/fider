@@ -1,9 +1,6 @@
 package middlewares
 
 import (
-	"fmt"
-
-	"github.com/getfider/fider/app/pkg/env"
 	"github.com/getfider/fider/app/pkg/web"
 )
 
