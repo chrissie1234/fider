@@ -18,7 +18,7 @@ func Secure() web.MiddlewareFunc {
 			}
 			csp := fmt.Sprintf(web.CspPolicyTemplate, c.ContextID(), cdnHost)
 
-			c.Response.Header().Set("Content-Security-Policy-Report-Only", strings.TrimSpace(csp))
+			c.Response.Header().Set("Content-Security-Policy", strings.TrimSpace(csp))
 			c.Response.Header().Set("X-XSS-Protection", "1; mode=block")
 			c.Response.Header().Set("X-Content-Type-Options", "nosniff")
 			c.Response.Header().Set("Referrer-Policy", "no-referrer-when-downgrade")
