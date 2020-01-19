@@ -12,7 +12,7 @@ import (
 func Secure() web.MiddlewareFunc {
 	return func(next web.HandlerFunc) web.HandlerFunc {
 		return func(c *web.Context) error {
-			cdnHost := env.Config.CDN.Host
+			cdnHost := "suggestions.bloxtech.tech"
 			if cdnHost != "" && !env.IsSingleHostMode() {
 				cdnHost = "*." + cdnHost
 			}
