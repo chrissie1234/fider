@@ -61,9 +61,6 @@ export const SignInControl: React.FunctionComponent<SignInControlProps> = props 
           <p className="info">We will never post to these accounts on your behalf.</p>
         </div>
       )}
-
-      {true == false && <div className="c-divider">OR</div>}
-
       {props.useEmail && (
         <div className="l-signin-email">
           <p>Enter your email address to sign in</p>
