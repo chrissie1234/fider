@@ -6,7 +6,7 @@ import { device, actions, Failure, isCookieEnabled } from "@fider/services";
 import { useFider } from "@fider/hooks";
 
 interface SignInControlProps {
-  useEmail: false;
+  useEmail: "false";
   redirectTo?: string;
   onEmailSent?: (email: string) => void;
 }
