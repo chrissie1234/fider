@@ -62,7 +62,7 @@ export const SignInControl: React.FunctionComponent<SignInControlProps> = props 
         </div>
       )}
 
-      {providersLen > 0 && <div className="c-divider">OR</div>}
+      {true == false && <div className="c-divider">OR</div>}
 
       {props.useEmail && (
         <div className="l-signin-email">
