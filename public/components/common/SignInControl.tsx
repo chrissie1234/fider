@@ -6,7 +6,7 @@ import { device, actions, Failure, isCookieEnabled } from "@fider/services";
 import { useFider } from "@fider/hooks";
 
 interface SignInControlProps {
-  useEmail: "false";
+  useEmail: boolean;
   redirectTo?: string;
   onEmailSent?: (email: string) => void;
 }
@@ -15,7 +15,7 @@ export const SignInControl: React.FunctionComponent<SignInControlProps> = props 
   const fider = useFider();
   const [email, setEmail] = useState("");
   const [error, setError] = useState<Failure | undefined>(undefined);
-
+  props.useEmail = false;
   const signIn = async () => {
     const result = await actions.signIn(email);
     if (result.ok) {
