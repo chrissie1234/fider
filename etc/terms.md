@@ -1,3 +1,4 @@
 # Terms of Service
 
-THIS IS A PLACEHOLDER FOR TERMS OF SERVICE. REPLACE WITH YOUR OWN.
+Our Terms of Service is available here:
+[Terms of Service](https://bloxtech.tech/legal/terms.php)
